@@ -1,16 +1,72 @@
-# React + Vite
+# macOS Web Portfolio 🍎
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based interactive replica of the macOS desktop environment, built as a personal portfolio. This project brings a familiar, polished desktop experience to the browser, complete with a functional Dock, top Navigation Bar, and draggable, resizable application windows.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **macOS Desktop Interface**: A beautiful, responsive desktop experience mimicking the aesthetics of macOS.
+- **Interactive App Windows**: Fully draggable, resizable, and stackable windows powered by `react-rnd`.
+- **Top Navigation Bar & Dock**: Classic macOS system bar and an animated Dock for launching applications.
+- **Included Applications**:
+  - **Terminal / CLI**: A fully functional command-line interface simulation using `react-console-emulator`.
+  - **Notes App**: A markdown-supported notepad built with `react-markdown` and `react-syntax-highlighter`.
+  - **GitHub Window**: View GitHub projects and repositories directly within the desktop.
+  - **Spotify Player**: An integrated music player interface.
+  - **Resume Viewer**: A dedicated window to display your professional resume.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: SCSS (Sass) for advanced, maintainable styling and animations.
+- **Key Libraries**:
+  - `react-rnd` - For draggable and resizable windows.
+  - `react-console-emulator` - For the interactive CLI terminal.
+  - `react-markdown` & `react-syntax-highlighter` - For rendering markdown notes and code snippets.
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this project locally, follow these steps:
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository (if you haven't already):
+   ```bash
+   git clone <repository-url>
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd "07. Mac OS"
+   ```
+
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and navigate to the local URL provided by Vite (usually `http://localhost:5173`).
+
+## 📜 Scripts
+
+- `npm run dev`: Starts the Vite development server.
+- `npm run build`: Bundles the app for production.
+- `npm run lint`: Runs ESLint to check for code quality.
+- `npm run preview`: Previews the production build locally.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
